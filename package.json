@@ -1,0 +1,14 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "👋 Hey there! Welcome to my Playwright Framework, crafted with TypeScript! This framework is all about bringing together Playwright and Docker for testing that's smooth sailing in containerized environments.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.12.3"
+  }
+}
