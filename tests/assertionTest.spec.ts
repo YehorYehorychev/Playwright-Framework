@@ -31,9 +31,21 @@ test('Text Match/Mismatch Assertion', async ({ page }) => {
     await page.close();
 })
 
-test.only('Attribute Assertion', async ({ page }) => {
+test('Attribute Assertion', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/');
     await expect(page.locator('input[placeholder="Username"]')).toHaveAttribute('name', 'username');
     await expect(page.locator('input[placeholder="Username"]')).toHaveAttribute('class', /.*oxd-input/);
+    await page.close();
+})
+
+test.only('URL Assertion', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/');
+
+    // Full URL Assertion
+    await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
+    // Partial URL Assertion
+    await expect(page).toHaveURL(/demo.orangehrmlive/);
+
     await page.close();
 })
