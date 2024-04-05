@@ -24,9 +24,16 @@ test('Enable/Disable Assertion', async ({ page }) => {
     await page.close();
 })
 
-test.only('Text Match/Mismatch Assertion', async ({ page }) => {
+test('Text Match/Mismatch Assertion', async ({ page }) => {
     await page.goto('https://letcode.in/buttons');
     await expect(page.locator('[id="color"]')).toHaveText('What is my color?');
     await expect(page.locator('[id="color"]')).not.toHaveText('What is your color?');
+    await page.close();
+})
+
+test.only('Attribute Assertion', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/');
+    await expect(page.locator('input[placeholder="Username"]')).toHaveAttribute('name', 'username');
+    await expect(page.locator('input[placeholder="Username"]')).toHaveAttribute('class', /.*oxd-input/);
     await page.close();
 })
