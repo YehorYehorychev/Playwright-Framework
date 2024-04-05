@@ -38,7 +38,7 @@ test('Attribute Assertion', async ({ page }) => {
     await page.close();
 })
 
-test.only('URL Assertion', async ({ page }) => {
+test('URL Assertion', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/');
 
     // Full URL Assertion
@@ -47,5 +47,17 @@ test.only('URL Assertion', async ({ page }) => {
     // Partial URL Assertion
     await expect(page).toHaveURL(/demo.orangehrmlive/);
 
+    await page.close();
+})
+
+test.only('Title Assertion', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com/');
+    
+    // Full Title Assertion
+    await expect(page).toHaveTitle('OrangeHRM');
+
+    // Partial Title Assertion
+    await expect(page).toHaveTitle(/.*Orange/);
+    
     await page.close();
 })
