@@ -14,4 +14,5 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Global Feed' }).click();
   await page.getByRole('link', { name: ' Settings' }).click();
   await page.getByRole('button', { name: 'Or click here to logout.' }).click();
+  await page.close();
 });
