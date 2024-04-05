@@ -9,4 +9,5 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Ruby Programming Language Ruby Programming Language https://www.ruby-lang.org' }).click();
   await page.getByRole('link', { name: 'Read More...' }).click();
   await page.getByRole('link', { name: 'Ruby A Programmer\'s Best' }).click();
+  await page.close();
 });

@@ -5,4 +5,5 @@ test('My First Test', async ({ page }) => {
 
     // Expect a title "Google"
     await expect(page).toHaveTitle('Google');
+    await page.close();
 });
