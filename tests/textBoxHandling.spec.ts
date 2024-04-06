@@ -11,10 +11,20 @@ test('Fill Method', async ({ page }) => {
     await page.close();
 })
 
-test.only('Press - Sequentially', async ({ page }) => {
+test('Press - Sequentially', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com');
     await page.locator('input[placeholder="Username"]').pressSequentially('Admin');
     await page.locator('input[placeholder="Password"]').pressSequentially('admin123');
+    await page.locator('input[placeholder="Password"]').press('Enter');
+    await page.locator('.oxd-userdropdown-tab').click();
+    await page.locator('text=Logout').click();
+    await page.close();
+})
+
+test.only('Press - Sequentially method with delay', async ({ page }) => {
+    await page.goto('https://opensource-demo.orangehrmlive.com');
+    await page.locator('input[placeholder="Username"]').pressSequentially('Admin', { delay: 200 });
+    await page.locator('input[placeholder="Password"]').pressSequentially('admin123', { delay: 200 });
     await page.locator('input[placeholder="Password"]').press('Enter');
     await page.locator('.oxd-userdropdown-tab').click();
     await page.locator('text=Logout').click();
