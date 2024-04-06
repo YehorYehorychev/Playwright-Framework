@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.only('Radio button Handling', async ({ page }) => {
+test('Radio button Handling', async ({ page }) => {
     await page.goto('https://demo.automationtesting.in/Register.html');
 
     // 2 radio button const variables
