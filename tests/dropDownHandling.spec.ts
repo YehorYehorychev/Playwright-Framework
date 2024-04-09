@@ -23,7 +23,7 @@ test('Single Static DropDown Handling', async ({ page }) => {
     await page.close();
 });
 
-test.only('Multi Static DropDown Handling', async ({ page }) => {
+test('Multi Static DropDown Handling', async ({ page }) => {
     await page.goto('https://www.lambdatest.com/selenium-playground/select-dropdown-demo');
 
     await page.selectOption('#multi-select', [
@@ -32,5 +32,13 @@ test.only('Multi Static DropDown Handling', async ({ page }) => {
         { index: 3 }
     ])
     await page.pause();
+    await page.close();
+});
+
+test.only('Searchable Dynamic DropDown Handling', async ({ page }) => {
+    await page.goto('https://demo.automationtesting.in/Register.html');
+    await page.locator('span[role="combobox"]').click();
+    await page.locator('input[role="textbox"]').fill('Japan');
+    await page.locator('//li[normalize-space()="Japan"]').click();
     await page.close();
 });
