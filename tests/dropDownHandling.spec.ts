@@ -43,7 +43,7 @@ test('Searchable Dynamic DropDown Handling', async ({ page }) => {
     await page.close();
 });
 
-test.only('Non Searchable Dynamic DropDown Handling', async ({ page }) => {
+test('Non Searchable Dynamic DropDown Handling', async ({ page }) => {
     await page.goto('https://demo.automationtesting.in/Register.html');
     await page.locator('span[role="combobox"]').click();
 
