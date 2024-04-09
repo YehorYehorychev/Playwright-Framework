@@ -35,10 +35,20 @@ test('Multi Static DropDown Handling', async ({ page }) => {
     await page.close();
 });
 
-test.only('Searchable Dynamic DropDown Handling', async ({ page }) => {
+test('Searchable Dynamic DropDown Handling', async ({ page }) => {
     await page.goto('https://demo.automationtesting.in/Register.html');
     await page.locator('span[role="combobox"]').click();
     await page.locator('input[role="textbox"]').fill('Japan');
     await page.locator('//li[normalize-space()="Japan"]').click();
+    await page.close();
+});
+
+test.only('Non Searchable Dynamic DropDown Handling', async ({ page }) => {
+    await page.goto('https://demo.automationtesting.in/Register.html');
+    await page.locator('span[role="combobox"]').click();
+
+    await page.locator('ul#select2-country-results').locator('li', {
+        hasText: "Japan"
+    }).click();
     await page.close();
 });
