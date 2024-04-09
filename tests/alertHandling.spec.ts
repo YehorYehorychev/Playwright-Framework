@@ -42,3 +42,31 @@ test('Confirm Alert - Cancel Button', async ({ page }) => {
     await page.locator('button[onclick="jsConfirm()"]').click();
     await page.close();
 });
+
+test('Prompt Alert - OK Button', async ({ page }) => {
+    await page.goto('https://the-internet.herokuapp.com/javascript_alerts');
+
+    page.on("dialog", async (alert) => {
+        const alertMessage = alert.message();
+        expect(alertMessage).toEqual('I am a JS prompt');
+        await alert.accept('Yehor');
+        await expect(page.locator('#result')).toHaveText('You entered: Yehor');
+    })
+
+    await page.locator('button[onclick="jsPrompt()"]').click();
+    await page.close();
+});
+
+test('Prompt Alert - Cancel Button', async ({ page }) => {
+    await page.goto('https://the-internet.herokuapp.com/javascript_alerts');
+
+    page.on("dialog", async (alert) => {
+        const alertMessage = alert.message();
+        expect(alertMessage).toEqual('I am a JS prompt');
+        await alert.dismiss();
+        await expect(page.locator('#result')).toHaveText('You entered: null');
+    })
+
+    await page.locator('button[onclick="jsPrompt()"]').click();
+    await page.close();
+});
