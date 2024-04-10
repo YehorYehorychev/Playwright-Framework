@@ -50,6 +50,25 @@ test('Selecting Multiple checkbox using function', async ({ page }) => {
     await page.close();
 });
 
+test('Print all items from Page 1 in PAgination table', async ({ page }) => {
+    await page.goto('https://testautomationpractice.blogspot.com/');
+
+    const table = page.locator('#productTable');
+    const columns = table.locator('thead tr th');
+    const rows = table.locator('tbody tr');
+
+    for (let i = 0; i < await rows.count(); i++) {
+        const row = rows.nth(i);
+        const rowData = row.locator('td');
+        for (let j = 0; j < await rowData.count(); j++) {
+            const cellContent = await rowData.nth(j).textContent();
+            console.log(cellContent);
+        }
+    }
+
+    await page.close();
+});
+
 async function selectProduct(rows, page, productName) {
     const matchedRow = rows.filter({
         has: page.locator('td'),
