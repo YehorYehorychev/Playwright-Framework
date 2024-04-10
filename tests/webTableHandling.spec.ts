@@ -50,7 +50,7 @@ test('Selecting Multiple checkbox using function', async ({ page }) => {
     await page.close();
 });
 
-test('Print all items from Page 1 in PAgination table', async ({ page }) => {
+test('Print all items from Page 1 in Pagination table', async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
 
     const table = page.locator('#productTable');
@@ -63,6 +63,35 @@ test('Print all items from Page 1 in PAgination table', async ({ page }) => {
         for (let j = 0; j < await rowData.count(); j++) {
             const cellContent = await rowData.nth(j).textContent();
             console.log(cellContent);
+        }
+    }
+
+    await page.close();
+});
+
+test('Print all items from all pages in Pagination table', async ({ page }) => {
+    await page.goto('https://testautomationpractice.blogspot.com/');
+
+    const table = page.locator('#productTable');
+    const columns = table.locator('thead tr th');
+    const rows = table.locator('tbody tr');
+
+    const pages = page.locator('#pagination li a');
+    const totalPages = await pages.count();
+    console.log('Total number of pages: ' + totalPages + ' pages.');
+
+    for (let p = 0; p < totalPages; p++) {
+        if (p > 0) {
+            await pages.nth(p).click();
+        }
+
+        for (let i = 0; i < await rows.count(); i++) {
+            const row = rows.nth(i);
+            const rowData = row.locator('td');
+            for (let j = 0; j < await rowData.count(); j++) {
+                const cellContent = await rowData.nth(j).textContent();
+                console.log(cellContent);
+            }
         }
     }
 
