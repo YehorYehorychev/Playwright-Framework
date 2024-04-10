@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.only('Web Table Handling', async ({ page }) => {
+test('Web Table Handling', async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
     const table = page.locator('table[name="BookTable"]');
 
@@ -14,6 +14,19 @@ test.only('Web Table Handling', async ({ page }) => {
     expect(await columns.count()).toBe(4);
     expect(await rows.count()).toBe(7);
 
+    await page.close();
+});
 
+test('Selecting Single checkbox in the table', async ({ page }) => {
+    await page.goto('https://testautomationpractice.blogspot.com/');
+    const table = page.locator('#productTable');
+    const columns = table.locator('thead tr th');
+    const rows = table.locator('tbody tr');
+
+    const matchedRow = rows.filter({
+        has: page.locator('td'),
+        hasText: 'Product 3'
+    })
+    await matchedRow.locator('input').check();
     await page.close();
 });
