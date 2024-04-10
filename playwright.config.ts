@@ -49,6 +49,16 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
 
+    {
+      name: 'chrome',
+      use: { ...devices['Desktop Chrome'] }, // or 'chrome-beta'
+    },
+
+    {
+      name: 'edge',
+      use: { ...devices['Desktop Edge'] }, // or 'msedge-dev'
+    },
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
