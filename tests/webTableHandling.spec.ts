@@ -30,3 +30,30 @@ test('Selecting Single checkbox in the table', async ({ page }) => {
     await matchedRow.locator('input').check();
     await page.close();
 });
+
+test('Selecting Multiple checkbox using function', async ({ page }) => {
+    await page.goto('https://testautomationpractice.blogspot.com/');
+    const table = page.locator('#productTable');
+    const columns = table.locator('thead tr th');
+    const rows = table.locator('tbody tr');
+
+    await selectProduct(rows, page, 'Product 1');
+    await selectProduct(rows, page, 'Product 3');
+    await selectProduct(rows, page, 'Product 5');
+
+    const matchedRow = rows.filter({
+        has: page.locator('td'),
+        hasText: 'Product 3'
+    })
+
+    await matchedRow.locator('input').check();
+    await page.close();
+});
+
+async function selectProduct(rows, page, productName) {
+    const matchedRow = rows.filter({
+        has: page.locator('td'),
+        hasText: productName
+    })
+    await matchedRow.locator('input').check();
+}
