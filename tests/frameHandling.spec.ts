@@ -22,7 +22,7 @@ test('Frame Handling using Page.FrameLocator()', async ({ page }) => {
     await page.close();
 });
 
-test.only('Nested Frame Handling', async ({ page }) => {
+test('Nested Frame Handling', async ({ page }) => {
     await page.goto('https://ui.vision/demo/webtest/frames/');
     await page.waitForLoadState('networkidle');
 
