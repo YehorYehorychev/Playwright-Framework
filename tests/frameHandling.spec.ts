@@ -13,3 +13,11 @@ test('Frame Handling using Page.Frame()', async ({ page }) => {
     await page.waitForTimeout(3000);
     await page.close();
 });
+
+test('Frame Handling using Page.FrameLocator()', async ({ page }) => {
+    await page.goto('https://ui.vision/demo/webtest/frames/');
+    const frame1 = page.frameLocator('frame[src="frame_1.html"]');
+    await frame1?.locator('input[name="mytext1"]').fill('PlayWright Test');
+    await page.waitForTimeout(3000);
+    await page.close();
+});
