@@ -15,3 +15,20 @@ test('Single Tab Handling', async ({ page }) => {
 
     await page.close();
 });
+
+test('Single Window Handling', async ({ page }) => {
+    await page.goto('https://demo.automationtesting.in/Windows.html');
+    await page.locator('.analystic[href="#Seperate"]').click();
+
+    const [newWindow] = await Promise.all([
+        page.waitForEvent('popup'),
+        await page.click('button[onclick="newwindow()"]')
+    ])
+
+    await newWindow.waitForLoadState();
+    await newWindow.locator('#navbarDropdown').click();
+    await newWindow.locator('a[href="/about"]').click();
+    await newWindow.close();
+
+    await page.close();
+});
