@@ -10,13 +10,34 @@ test('Using Fill Method', async ({ page }) => {
 
 test('Using Luxon', async ({ page }) => {
     await page.goto('https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo');
+
+    // Select Past Date
     await page.locator('input[placeholder="Start date"]').click();
+    selectDate(20, "June 2019", page);
+    await page.waitForTimeout(5000);
+    await page.reload();
+
+    // Select Future Date
+    await page.locator('input[placeholder="Start date"]').click();
+    selectDate(20, "June 2026", page);
+    await page.waitForTimeout(5000);
+    await page.reload();
+
+    // Select Current Month Date
+    await page.locator('input[placeholder="Start date"]').click();
+    selectDate(11, "April 2024", page);
+    await page.waitForTimeout(5000);
+    await page.reload();
+
+    await page.close();
+});
+
+async function selectDate(date: Number, dateToSelect: String, page) {
 
     const monthYear = page.locator('div[class="datepicker-days"] th[class="datepicker-switch"]');
     const prevButton = page.locator('div[class="datepicker-days"] th[class="prev"]');
     const nextButton = page.locator('div[class="datepicker-days"] th[class="next"]');
 
-    let dateToSelect = "October 1993";
     const formattedMonth = DateTime.fromFormat(dateToSelect, "MMMM yyyy");
 
     while (await monthYear.textContent() != dateToSelect) {
@@ -27,6 +48,5 @@ test('Using Luxon', async ({ page }) => {
         }
     }
 
-    await page.locator('//td[@class="day"] [text()="18"]').click();
-    await page.close();
-});
+    await page.locator(`//td[@class="day"] [text()="${date}"]`).click();
+}
