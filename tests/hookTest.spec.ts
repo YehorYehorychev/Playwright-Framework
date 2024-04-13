@@ -1,29 +1,24 @@
 import { test } from '@playwright/test'
 
-test.beforeAll(async () => {
-    console.log('Before All Hook');
-})
+let page;
 
-test.beforeEach(async () => {
-    console.log('Before Each Hook');
-})
-
-test('Test 1', async () => {
-    console.log('Test 1 Block');
-})
-
-test('Test 2', async () => {
-    console.log('Test 2 Block');
-})
-
-test('Test 3', async () => {
-    console.log('Test 3 Block');
-})
+test.beforeEach(async ({ browser }) => {
+    page = await browser.newPage();
+    await page.goto('https://www.saucedemo.com/');
+    await page.locator('#user-name').fill('standard_user');
+    await page.locator('#password').fill('secret_sauce');
+    await page.locator('#login-button').click();
+});
 
 test.afterEach(async () => {
-    console.log('After Each Hook');
-})
+    await page.locator('#react-burger-menu-btn').click();
+    await page.locator('#logout_sidebar_link').click();
+    await page.close();
 
-test.afterAll(async () => {
-    console.log('After All Hook');
-})
+});
+
+test('Add items and Check out test', async ({ }) => {
+    await page.locator('#add-to-cart-sauce-labs-backpack').click();
+    await page.locator('.shopping_cart_link').click();
+    await page.locator('#checkout').click();
+});
