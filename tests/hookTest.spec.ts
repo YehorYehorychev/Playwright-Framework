@@ -22,3 +22,9 @@ test('Add items and Check out test', async ({ }) => {
     await page.locator('.shopping_cart_link').click();
     await page.locator('#checkout').click();
 });
+
+test('Add items and Remove from Cart test', async ({ }) => {
+    await page.locator('#add-to-cart-sauce-labs-backpack').click();
+    await page.locator('.shopping_cart_link').click();
+    await page.locator('#remove-sauce-labs-backpack').click();
+});
