@@ -13,7 +13,7 @@ export default defineConfig({
   // Add double slash -> './/tests', if you use Windows 11 env
   testDir: './/tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
