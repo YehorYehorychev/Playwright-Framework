@@ -31,8 +31,8 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     // screenshot: 'on'
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    // screenshot: 'only-on-failure',
+    // video: 'retain-on-failure'
   },
   // grep: [new RegExp("@smoke"), new RegExp("@sanity")],
   // grepInvert: [new RegExp("@smoke"), new RegExp("@sanity")],
