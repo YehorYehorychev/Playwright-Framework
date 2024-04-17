@@ -11,5 +11,8 @@
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.12.3",
     "luxon": "^3.4.4"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.5"
   }
 }
