@@ -1,7 +1,7 @@
 import { Locator, Page } from '@playwright/test'
 
 export default class BasePage {
-    private readonly page: Page;
+    readonly page: Page;
 
     constructor(page: Page) {
         this.page = page;
