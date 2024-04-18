@@ -1,10 +1,10 @@
 import { Locator, Page } from "@playwright/test";
 
 export class SignInPage {
-    readonly page: Page;
-    readonly emailIdTextBox: Locator;
-    readonly passwordIdTextBox: Locator;
-    readonly signInButton: Locator;
+    private readonly page: Page;
+    private readonly emailIdTextBox: Locator;
+    private readonly passwordIdTextBox: Locator;
+    private readonly signInButton: Locator;
 
     constructor(page: Page) {
         this.emailIdTextBox = page.locator('input[placeholder="Email"]');
