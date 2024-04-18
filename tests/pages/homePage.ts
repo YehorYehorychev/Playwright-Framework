@@ -1,8 +1,8 @@
 import { Locator, Page } from "@playwright/test";
 
 export class HomePage {
-    readonly page: Page;
-    readonly settingsButton: Locator;
+    private readonly page: Page;
+    private readonly settingsButton: Locator;
 
     constructor(page: Page) {
         this.settingsButton = page.locator('a[href="#settings"]');
