@@ -1,3 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Apr 18 18:04:27 PDT 2024","Thu Apr 18 18:04:33 PDT 2024","5979","chromium","readJsonData.spec.ts","","","","Login Test with valid credentials Orange HRM",""
-"passed","Thu Apr 18 18:04:27 PDT 2024","Thu Apr 18 18:04:31 PDT 2024","4295","chromium","readJsonData.spec.ts","","","","Login Test with invalid credentials Orange HRM",""
+"passed","Thu Apr 18 19:00:45 PDT 2024","Thu Apr 18 19:00:50 PDT 2024","4499","chromium","loginTest.spec.ts","","","","Login Test for Orange HRM",""
