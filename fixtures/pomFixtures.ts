@@ -25,3 +25,6 @@ const testPages = baseTest.extend<pages>({
         await use(new SettingsPage(page));
     }
 })
+
+export const test = testPages;
+export const expect = testPages.expect;
