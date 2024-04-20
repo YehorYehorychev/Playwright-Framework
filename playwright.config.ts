@@ -13,7 +13,7 @@ export default defineConfig({
   // Add double slash -> './/tests', if you use Windows 11 env
   testDir: './/tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -27,7 +27,7 @@ export default defineConfig({
     #1 Command: npx allure generate ./allure-results/ --clean -> to generate a report folder
     #2 Command: npx allure open ./allure-report/ -> to compile json files to the html page with results
     */
-  reporter: [['html'], ['allure-playwright']],
+  reporter: 'html', // [['html'], ['allure-playwright']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
