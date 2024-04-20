@@ -10,10 +10,10 @@ test('Get user Details using GET API request', async ({ request }) => {
     expect(responseJson.data[0].first_name).toBe('Michael');
 });
 
-test.only('Create a new user using POST API request', async ({ request }) => {
+test('Create a new user using POST API request', async ({ request }) => {
     var user = {
-        "name": "morpheus",
-        "job": "leader"
+        "name": "playwright",
+        "job": "tester"
     }
 
     const response = await request.post('https://reqres.in/api/users', {
@@ -26,4 +26,30 @@ test.only('Create a new user using POST API request', async ({ request }) => {
     expect(responseJson.name).toBe(`${user.name}`);
     expect(responseJson.job).toBe(`${user.job}`);
     userId = responseJson.id;
+});
+
+test('Update a user data using PUT API request', async ({ request }) => {
+    var user = {
+        "name": "automation",
+        "job": "course"
+    }
+
+    const response = await request.put('https://reqres.in/api/users/' + userId, {
+        data: user,
+        headers: { "ACCEPT": "applications/JSON" }
+    })
+
+    var responseJson = await response.json();
+    expect(response.status()).toBe(200);
+    expect(responseJson.name).toBe(`${user.name}`);
+    expect(responseJson.job).toBe(`${user.job}`);
+    userId = responseJson.id;
+});
+
+test('Delete user data using DELETE API request', async ({ request }) => {
+    const response = await request.delete('https://reqres.in/api/users/' + userId);
+    expect(response.status()).toBe(204);
+
+    const response2 = await request.get('https://reqres.in/api/users/' + userId);
+    console.log(await response2.json());
 });
