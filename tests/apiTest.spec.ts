@@ -45,3 +45,11 @@ test('Update a user data using PUT API request', async ({ request }) => {
     expect(responseJson.job).toBe(`${user.job}`);
     userId = responseJson.id;
 });
+
+test('Delete user data using DELETE API request', async ({ request }) => {
+    const response = await request.delete('https://reqres.in/api/users/' + userId);
+    expect(response.status()).toBe(204);
+
+    const response2 = await request.get('https://reqres.in/api/users/' + userId);
+    console.log(await response2.json());
+});
