@@ -33,3 +33,27 @@ When('I am on the Page F', async function () {
 Then('I am on the Page G', async function () {
     console.log("Page G");
 });
+
+Before( async function() {
+    console.log("Before block");
+});
+
+BeforeAll( async function() {
+    console.log("BeforeAll block");
+});
+
+BeforeStep( async function() {
+    console.log("BeforeStep block");
+});
+
+After( async function() {
+    console.log("After block");
+});
+
+AfterAll( async function() {
+    console.log("AfterAll block");
+});
+
+AfterStep( async function() {
+    console.log("AfterStep block");
+});
