@@ -4,27 +4,24 @@
   "description": "👋 Hey there! Welcome to my Playwright Framework, crafted with TypeScript! This framework is all about bringing together Playwright and Docker for testing that's smooth sailing in containerized environments.",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rimraf allure-report allure-results && mkdirp allure-report allure-results",
-    "generate:reports": "npx allure generate ./allure-results/ --clean",
-    "open:reports": "npx allure open ./allure-report/",
-    "pretest": "npm run clean:reports",
-    "posttest": "npm run generate:reports && npm run open:reports",
-    "execute:script": "npx playwright test --project=chromium --headed",
-    "test": "npm run execute:script || npm run posttest"
-  },
+    "test": "cucumber-js test"
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^10.5.1",
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.12.3",
     "allure-commandline": "^2.28.0",
     "allure-playwright": "^2.15.1",
     "luxon": "^3.4.4",
     "mkdirp": "^3.0.1",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "csv-parse": "^5.5.5"
   }
 }
+

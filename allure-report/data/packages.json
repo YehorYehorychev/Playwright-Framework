@@ -1,1 +1,1 @@
-{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[{"name":"Login Test for Orange HRM","uid":"cfbd697547be0e04","parentUid":"83edc06c07f9ae9e47eb6dd1b683e4e2","status":"passed","time":{"start":1713492045731,"stop":1713492050230,"duration":4499},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["chromium"],"tags":[]}]}
+{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[]}
