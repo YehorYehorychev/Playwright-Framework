@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { chromium, Browser, Page, expect } from '@playwright/test';
-import { pageFixture } from '../hooks/pageFixture';
+import { pageFixture } from '../../hooks/pageFixture';
 
 Given('I am on the conduit login page', async function () {
   await pageFixture.page.goto('https://react-redux.realworld.io/');

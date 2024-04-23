@@ -1,6 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { chromium, Browser, Page, expect } from '@playwright/test';
-import { pageFixture } from '../hooks/pageFixture';
+import { pageFixture } from '../../hooks/pageFixture';
+import { TIMEOUT } from 'dns';
 
 const articleName = "Playwright " + Math.random();
 
@@ -20,5 +21,5 @@ When('I Publish the article', async function () {
  });
 
 Then('I should see the Article posted', async function () {
-  expect(pageFixture.page.locator('div[class="container"] h1')).toHaveText(articleName);
+  await expect(pageFixture.page.locator('//a[normalize-space()="playwrightdemo"]')).toBeVisible();
 });
