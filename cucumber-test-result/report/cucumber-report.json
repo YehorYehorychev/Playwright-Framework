@@ -1,0 +1,221 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "conduit-post-adding-functionality;add-an-article-on-conduit",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add an Article on Conduit",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 210661199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the conduit login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1313422299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41224500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on the New Post button",
+            "match": {
+              "location": "src\\test\\steps\\addPostSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1337753700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I fill up all require fields",
+            "match": {
+              "location": "src\\test\\steps\\addPostSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27347199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I Publish the article",
+            "match": {
+              "location": "src\\test\\steps\\addPostSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34229600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the Article posted",
+            "match": {
+              "location": "src\\test\\steps\\addPostSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4963699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20364500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "conduit-post-adding-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Conduit Post adding Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\addPost.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "conduit-login-functionality;login-and-logout-with-valid-credentioals",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login and Logout with valid credentioals",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 66777499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the conduit login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1037895500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33030499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on the settings button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 850506500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the logout button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55615299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I route back to the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1966900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18912400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "conduit-login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Conduit Login Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]
