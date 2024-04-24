@@ -23,10 +23,6 @@ Given('I am on the Page E', async function () {
     console.log("Page E");
 });
 
-When('I am on the Page D', async function () {
-    console.log("Page D");
-});
-
 When('I am on the Page F', async function () {
     console.log("Page F");
 });
