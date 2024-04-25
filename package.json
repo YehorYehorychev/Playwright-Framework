@@ -4,7 +4,12 @@
   "description": "👋 Hey there! Welcome to my Playwright Framework, crafted with TypeScript! This framework is all about bringing together Playwright and Docker for testing that's smooth sailing in containerized environments.",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "clean:reports": "rimraf test-result && mkdirp test-result",
+    "generate:report": "npx ts-node ./src/helper/reportGenerate.ts",
+    "pretest": "npm run clean:reports",
+    "posttest": "npm run generate:report",
+    "execute:script": "cucumber-js test",
+    "test": "npm run execute:script || npm run posttest"
   },
   "keywords": [],
   "author": "",
