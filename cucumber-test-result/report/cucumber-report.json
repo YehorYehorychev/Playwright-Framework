@@ -4,95 +4,57 @@
     "elements": [
       {
         "description": "",
-        "id": "conduit-post-adding-functionality;add-an-article-on-conduit",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Add an Article on Conduit",
+        "id": "orange-hrm-login-functionality;login-with-valid/invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Login with valid/invalid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 115721800
+              "duration": 120409899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I am on the conduit login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:5"
-            },
+            "name": "I am on the Orange HRM login page",
             "result": {
-              "status": "passed",
-              "duration": 1078436200
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I login with valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
+            "name": "I login with username as \"Admin\" and password as \"admin123\"",
             "result": {
-              "status": "passed",
-              "duration": 48701399
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I click on the New Post button",
-            "match": {
-              "location": "src\\test\\steps\\addPostSteps.ts:8"
-            },
+            "name": "I click on the login button",
             "result": {
-              "status": "passed",
-              "duration": 849322699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I fill up all require fields",
-            "match": {
-              "location": "src\\test\\steps\\addPostSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23950299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I Publish the article",
-            "match": {
-              "location": "src\\test\\steps\\addPostSteps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 28528699
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "I should see the Article posted",
-            "match": {
-              "location": "src\\test\\steps\\addPostSteps.ts:23"
-            },
+            "line": 7,
+            "name": "I route to the Orange HRM home page",
             "result": {
-              "status": "passed",
-              "duration": 4942600
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -100,102 +62,66 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 20920100
+              "duration": 26385600
             }
           }
         ],
         "tags": [],
         "type": "scenario"
-      }
-    ],
-    "id": "conduit-post-adding-functionality",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Conduit Post adding Functionality",
-    "tags": [],
-    "uri": "src\\test\\features\\addPost.feature"
-  },
-  {
-    "description": "",
-    "elements": [
+      },
       {
         "description": "",
-        "id": "conduit-login-functionality;login-and-logout-with-valid-credentioals",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Login and Logout with valid credentioals",
+        "id": "orange-hrm-login-functionality;login-with-valid/invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Login with valid/invalid credentials",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 69935100
+              "duration": 70016099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I am on the conduit login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:5"
-            },
+            "name": "I am on the Orange HRM login page",
             "result": {
-              "status": "passed",
-              "duration": 1071657100
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I login with valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
+            "name": "I login with username as \"Admin123\" and password as \"admin123\"",
             "result": {
-              "status": "passed",
-              "duration": 33602899
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I click on the settings button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:16"
-            },
+            "name": "I click on the login button",
             "result": {
-              "status": "passed",
-              "duration": 831468800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I click on the logout button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 51855700
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I route back to the login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:24"
-            },
+            "line": 7,
+            "name": "I route to the Orange HRM home page",
             "result": {
-              "status": "passed",
-              "duration": 2562599
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -203,7 +129,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19507200
+              "duration": 19272700
             }
           }
         ],
@@ -211,11 +137,11 @@
         "type": "scenario"
       }
     ],
-    "id": "conduit-login-functionality",
+    "id": "orange-hrm-login-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "Conduit Login Functionality",
+    "name": "Orange HRM Login Functionality",
     "tags": [],
-    "uri": "src\\test\\features\\login.feature"
+    "uri": "src\\test\\features\\orangeHRMLogin.feature"
   }
 ]
