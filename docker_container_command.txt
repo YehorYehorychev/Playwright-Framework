@@ -1,1 +1,2 @@
 docker run -it --rm --name playwright-container -v "%cd%":/app mcr.microsoft.com/playwright:v1.42.1-jammy
+If you use a Linux or powershell use this command -> docker run -it --rm --name playwright-container -v $PWD:/app mcr.microsoft.com/playwright:v1.42.1-jammy
