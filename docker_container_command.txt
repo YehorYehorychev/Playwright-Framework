@@ -1,1 +1,1 @@
-docker run -it --rm --name playwright0container -v "%cd%":/app mcr.microsoft.com/playwright:v1.42.1-jammy
+docker run -it --rm --name playwright-container -v "%cd%":/app mcr.microsoft.com/playwright:v1.42.1-jammy
