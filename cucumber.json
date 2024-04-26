@@ -30,6 +30,7 @@
             "json:cucumber-test-result/report/cucumber-report.json",
             "rerun:@rerun.txt"
         ],
-        "parallel": 2
+        "parallel": 2,
+        "retry": 1
     }
 }
