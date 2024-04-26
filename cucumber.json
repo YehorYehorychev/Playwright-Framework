@@ -15,5 +15,21 @@
             "rerun:@rerun.txt"
         ],
         "parallel": 2
+    },
+    "rerun": {
+        "formatOptions":{
+            "snippetInterface": "async-await"
+        },
+        "require": [
+            "src/test/steps/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule": ["ts-node/register"],
+        "format": [
+            "html:cucumber-test-result/report/cucumber-report.html",
+            "json:cucumber-test-result/report/cucumber-report.json",
+            "rerun:@rerun.txt"
+        ],
+        "parallel": 2
     }
 }
