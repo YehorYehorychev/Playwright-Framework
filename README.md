@@ -6,7 +6,7 @@ With Cucumber 🥒 onboard, it's all about that BDD-style goodness, making test 
 🔧 Ready to dive into web automation with confidence and ease? 
 Let's do this! 🚀
 
-# Prerequisites 🐳
+# Docker Prerequisites 🐳
 Before you begin, ensure you have met the following requirements:
 
 You have Docker Desktop installed on your system. 
@@ -14,6 +14,7 @@ You have an understanding of how to use Docker containers.
 
 # Installation 
 To install the framework, follow these steps:
+
 Clone this repository to your local machine.
 Navigate to the cloned repository's directory.
 
