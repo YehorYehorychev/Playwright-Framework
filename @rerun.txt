@@ -1,2 +1,1 @@
-src\test\features\login.feature:3
-src\test\features\orangeHRMLogin.feature:12
+src/test/features/orangeHRMLogin.feature:11:12

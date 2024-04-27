@@ -1,0 +1,24 @@
+For Windows CMD -> docker run -it --rm --name playwright-container -v "%cd%:/app" mcr.microsoft.com/playwright:v1.42.1-jammy
+
+If you use a Linux or powershell use this command -> docker run -it --rm --name playwright-container -v $PWD:/app mcr.microsoft.com/playwright:v1.42.1-jammy'
+
+To install open JDK 11 into your Docker container run -> docker exec -it your_container_serial_number_here bash -c "apt-get update && apt-get install -y openjdk-11-jdk"
+
+To switch to the root directory of your container run -> docker exec -u root -it your_container_serial_number_here bash
+
+
+####################### --- ALTERNATIVE --- #######################
+
+Command to execute test inside COMMAND PROMPT - docker run -it --rm --name playwright-container -v "%cd%":/app mcr.microsoft.com/playwright:v1.42.1-jammy
+
+Command to execute test inside POWER SHELL - docker run -it --rm --name playwright-container -v "$(pwd):/app" mcr.microsoft.com/playwright:v1.42.1-jammy
+
+
+
+Once it opens the Bash inside the Docker run
+
+cd /app --> To switch to app folder where all our code is copied
+
+npm install --> To install all the dependencies mentioned in the package.json
+
+npx playwright test or npm run test if it's a cucumber project --> To execute the test
