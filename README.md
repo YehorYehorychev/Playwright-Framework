@@ -28,19 +28,19 @@ Execute one of the following commands based on your **operating system:**
 
 Copy code:
 
-```docker run -it --rm --name playwright-container -v "%cd%:/app" mcr.microsoft.com/playwright:v1.42.1-jammy```
+``docker run -it --rm --name playwright-container -v "%cd%:/app" mcr.microsoft.com/playwright:v1.42.1-jammy``
 
 ### For Linux or PowerShell
 
 Copy code:
 
-```docker run -it --rm --name playwright-container -v $PWD:/app mcr.microsoft.com/playwright:v1.42.1-jammy```
+``docker run -it --rm --name playwright-container -v $PWD:/app mcr.microsoft.com/playwright:v1.42.1-jammy``
 
 Now you need to install OpenJDK 11 into your Docker container, open a **new CMD window** and run the following command:
 
 Copy code:
 
-```docker exec -it <your_container_id> bash -c "apt-get update && apt-get install -y openjdk-11-jdk"```
+``docker exec -it <your_container_id> bash -c "apt-get update && apt-get install -y openjdk-11-jdk"``
 
 Once the Docker container is running, execute the following commands inside the container:
 
@@ -54,20 +54,20 @@ To execute the tests, run:
 
 Copy code:
 
-```npx playwright test```
+``npx playwright test``
 
 If it's a Cucumber project, run:
 
 Copy code:
 
-```npm run test```
+``npm run test``
 
 ## Additional Instructions
 To switch to the **root directory** of your container, run:
 
 Copy code:
 
-```docker exec -u root -it <your_container_id> bash```
+``docker exec -u root -it <your_container_id> bash``
 
 ## Contact
 
