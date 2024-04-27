@@ -12,44 +12,54 @@ Before you begin, ensure you have met the following requirements:
 You have Docker Desktop installed on your system. 
 You have an understanding of how to use Docker containers.
 
-# Installation 
+## Installation 
 To install the framework, follow these steps:
 
 Clone this repository to your local machine.
 Navigate to the cloned repository's directory.
 
-# Usage
+## Usage
 To use the framework in Docker Container, follow these steps:
+
 Open a terminal or command prompt window.
 Execute one of the following commands based on your operating system:
 
-# For Windows CMD
+### For Windows CMD
 Copy code:
+
 ``docker run -it --rm --name playwright-container -v "%cd%:/app" mcr.microsoft.com/playwright:v1.42.1-jammy``
 
-# For Linux or PowerShell
+### For Linux or PowerShell
 Copy code:
+
 ``docker run -it --rm --name playwright-container -v $PWD:/app mcr.microsoft.com/playwright:v1.42.1-jammy``
+
 Now you need to install OpenJDK 11 into your Docker container, open a new CMD window and run the following command:
 Copy code:
+
 ``docker exec -it <your_container_id> bash -c "apt-get update && apt-get install -y openjdk-11-jdk"``
+
 Once the Docker container is running, execute the following commands inside the container:
 Copy code:
+
 ``cd /app``
 ``npm install``
 To execute the tests, run:
 Copy code:
+
 ``npx playwright test``
 If it's a Cucumber project, run:
 Copy code:
+
 ``npm run test``
 
-# Additional Instructions
+## Additional Instructions
 To switch to the root directory of your container, run:
 Copy code:
+
 ``docker exec -u root -it <your_container_id> bash``
 
-# Contact
+## Contact
 
 Yehor - egor57899@gmail.com
 Project Link: https://github.com/YehorYehorychev/Playwright-Framework
