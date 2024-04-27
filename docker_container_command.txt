@@ -21,4 +21,4 @@ cd /app --> To switch to app folder where all our code is copied
 
 npm install --> To install all the dependencies mentioned in the package.json
 
-npx playwright test--> To execute the test
+npx playwright test or npm run test if it's a cucumber project --> To execute the test
