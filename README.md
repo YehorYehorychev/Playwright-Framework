@@ -12,11 +12,11 @@ Before you begin, ensure you have met the following requirements:
 You have Docker Desktop installed on your system. 
 You have an understanding of how to use Docker containers.
 
-# To run the docker compose file run:
+# To run tests using a Docker container, open the project and execute the command:
 
 ``docker-compose -f docker-compose.yml up``
 
-## Manual container creation instruction
+## Manual container creation instruction (Optional)
 If you need to create a Docker Container manually, follow these steps:
 
 Open a terminal or command prompt window.
