@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47605581
+              "duration": 41980646
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1083073774
+              "duration": 624401245
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42546144
+              "duration": 41418372
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1302695816
+              "duration": 817835702
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23290984
+              "duration": 20545833
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41637380
+              "duration": 27583955
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24991074
+              "duration": 15836771
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5839181
+              "duration": 5154078
             }
           }
         ],
@@ -130,7 +130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47692517
+              "duration": 41572774
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1016185140
+              "duration": 664153205
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 42514852
+              "duration": 42757496
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 835545341
+              "duration": 801840729
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99170939
+              "duration": 97894457
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24100355
+              "duration": 18935481
             }
           },
           {
@@ -203,7 +203,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5680748
+              "duration": 5180859
             }
           }
         ],
@@ -233,7 +233,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 15408378
+              "duration": 14722217
             }
           },
           {
@@ -246,7 +246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2422665804
+              "duration": 2274682373
             }
           },
           {
@@ -259,7 +259,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 345857559
+              "duration": 342670756
             }
           },
           {
@@ -272,7 +272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1063031933
+              "duration": 979373263
             }
           },
           {
@@ -285,7 +285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 845869
+              "duration": 555113
             }
           },
           {
@@ -293,7 +293,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 14353938
+              "duration": 11879901
             }
           }
         ],
@@ -312,7 +312,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 14970776
+              "duration": 13865849
             }
           },
           {
@@ -325,7 +325,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2320995003
+              "duration": 2412550632
             }
           },
           {
@@ -338,7 +338,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 356348976
+              "duration": 810603350
             }
           },
           {
@@ -351,7 +351,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 660993258
+              "duration": 669861710
             }
           },
           {
@@ -364,7 +364,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1991278,
+              "duration": 2336444,
               "error_message": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index\"\nReceived: \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\"\n    at Proxy.<anonymous> (/app/node_modules/playwright/lib/matchers/expect.js:174:37)\n    at World.<anonymous> (/app/src/test/steps/orangeHRMSteps.ts:20:23)"
             }
           },
@@ -373,7 +373,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 121544789
+              "duration": 100930258
             },
             "embeddings": [
               {
