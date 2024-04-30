@@ -12,18 +12,12 @@ Before you begin, ensure you have met the following requirements:
 You have Docker Desktop installed on your system. 
 You have an understanding of how to use Docker containers.
 
-## To run the docker compose file run:
+# To run the docker compose file run:
 
 ``docker-compose -f docker-compose.yml up``
 
-## Manual Installation 
-To install the framework, follow these steps:
-
-Clone this repository to your local machine.
-Navigate to the cloned repository's directory.
-
-## Usage
-To use the framework in Docker Container, follow these steps:
+## Manuall Container creating instruction
+If you need to create a Docker Container manually, follow these steps:
 
 Open a terminal or command prompt window.
 Execute one of the following commands based on your **operating system:**
