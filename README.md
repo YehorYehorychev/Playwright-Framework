@@ -16,7 +16,7 @@ You have an understanding of how to use Docker containers.
 
 ``docker-compose -f docker-compose.yml up``
 
-## Manual Container creating instruction
+## Manual container creation instruction
 If you need to create a Docker Container manually, follow these steps:
 
 Open a terminal or command prompt window.
