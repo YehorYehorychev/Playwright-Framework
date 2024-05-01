@@ -4,109 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "conduit-login-functionality;login-and-logout-with-valid-credentioals",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Login and Logout with valid credentioals",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 84819799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I am on the conduit login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3840575600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I login with valid credentials",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 44924500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 6,
-            "name": "I click on the settings button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 869539299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I click on the logout button",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 99215400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I route back to the login page",
-            "match": {
-              "location": "src\\test\\steps\\loginSteps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4772199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 4373600
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "conduit-login-functionality",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Conduit Login Functionality",
-    "tags": [],
-    "uri": "src\\test\\features\\login.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "conduit-post-adding-functionality;add-an-article-on-conduit",
         "keyword": "Scenario",
         "line": 3,
@@ -117,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 83995099
+              "duration": 68510299
             }
           },
           {
@@ -130,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4024990299
+              "duration": 603169500
             }
           },
           {
@@ -143,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43021099
+              "duration": 61777499
             }
           },
           {
@@ -156,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 835985700
+              "duration": 832569099
             }
           },
           {
@@ -169,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23858800
+              "duration": 27952099
             }
           },
           {
@@ -182,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38353099
+              "duration": 36104799
             }
           },
           {
@@ -195,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5185200
+              "duration": 4971900
             }
           },
           {
@@ -203,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4131799
+              "duration": 4247199
             }
           }
         ],
@@ -223,6 +120,109 @@
     "elements": [
       {
         "description": "",
+        "id": "conduit-login-functionality;login-and-logout-with-valid-credentioals",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login and Logout with valid credentioals",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65417400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the conduit login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 615116100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with valid credentials",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60160399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on the settings button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 836721400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the logout button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97330300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I route back to the login page",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5365600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5946800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "conduit-login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Conduit Login Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "orange-hrm-login-functionality;login-with-valid/invalid-credentials",
         "keyword": "Scenario Outline",
         "line": 11,
@@ -233,7 +233,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36715899
+              "duration": 37612300
             }
           },
           {
@@ -246,7 +246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2407278500
+              "duration": 2458773099
             }
           },
           {
@@ -259,7 +259,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5010238600,
+              "duration": 5008229000,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"
             }
           },
@@ -269,7 +269,7 @@
             "line": 6,
             "name": "I click on the login button",
             "match": {
-              "location": "src\\test\\steps\\orangeHRMSteps.ts:14"
+              "location": "src\\test\\steps\\orangeHRMSteps.ts:15"
             },
             "result": {
               "status": "skipped",
@@ -282,7 +282,7 @@
             "line": 7,
             "name": "I route to the Orange HRM home page",
             "match": {
-              "location": "src\\test\\steps\\orangeHRMSteps.ts:18"
+              "location": "src\\test\\steps\\orangeHRMSteps.ts:19"
             },
             "result": {
               "status": "skipped",
@@ -294,7 +294,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57621300
+              "duration": 78184299
             },
             "embeddings": [
               {
@@ -319,7 +319,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48394599
+              "duration": 37932900
             }
           },
           {
@@ -332,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2374619700
+              "duration": 2376379999
             }
           },
           {
@@ -345,7 +345,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5012848199,
+              "duration": 5003862700,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"
             }
           },
@@ -355,7 +355,7 @@
             "line": 6,
             "name": "I click on the login button",
             "match": {
-              "location": "src\\test\\steps\\orangeHRMSteps.ts:14"
+              "location": "src\\test\\steps\\orangeHRMSteps.ts:15"
             },
             "result": {
               "status": "skipped",
@@ -368,7 +368,7 @@
             "line": 7,
             "name": "I route to the Orange HRM home page",
             "match": {
-              "location": "src\\test\\steps\\orangeHRMSteps.ts:18"
+              "location": "src\\test\\steps\\orangeHRMSteps.ts:19"
             },
             "result": {
               "status": "skipped",
@@ -380,7 +380,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64950699
+              "duration": 79123500
             },
             "embeddings": [
               {
