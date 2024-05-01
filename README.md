@@ -9,7 +9,7 @@ Let's do this! 🚀
 # Docker Prerequisites 🐳
 Before you begin, ensure you have met the following requirements:
 
-You have Docker Desktop installed on your system. 
+You have Docker Desktop installed on your system and make sure that you have a Docker Plugin installed in your IDE
 You have an understanding of how to use Docker containers.
 
 # To run tests using a Docker container, open the project and execute the command:
