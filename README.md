@@ -14,7 +14,7 @@ You have an understanding of how to use Docker containers.
 
 # To run tests using a Docker container, open the project and execute the command:
 
-``docker-compose -f docker-compose.yml up``
+``docker-compose -f docker-compose.yaml up``
 
 ## Manual container creation instruction (Optional)
 If you need to create a Docker Container manually, follow these steps:
