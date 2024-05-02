@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70093799
+              "duration": 65674099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 618421300
+              "duration": 1022680000
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44478000
+              "duration": 43224299
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 836343999
+              "duration": 850703300
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20912700
+              "duration": 21521799
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43289299
+              "duration": 28914299
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4719100
+              "duration": 5144899
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3977799
+              "duration": 4080200
             }
           }
         ],
@@ -130,7 +130,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70098000
+              "duration": 67022600
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 601186900
+              "duration": 1032719399
             }
           },
           {
@@ -156,7 +156,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45669100
+              "duration": 45338799
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 852904100
+              "duration": 852238600
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 97419699
+              "duration": 98056799
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6243300
+              "duration": 4585299
             }
           },
           {
@@ -203,7 +203,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4534900
+              "duration": 4796899
             }
           }
         ],
@@ -233,7 +233,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37351199
+              "duration": 36914499
             }
           },
           {
@@ -246,7 +246,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2461520299
+              "duration": 2292352300
             }
           },
           {
@@ -259,7 +259,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 336463699
+              "duration": 348013099
             }
           },
           {
@@ -272,7 +272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 188356399
+              "duration": 3017240399
             }
           },
           {
@@ -285,8 +285,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2177000,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mdashboard/index\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mauth/validate\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:174:37)\n    at World.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\src\\test\\steps\\orangeHRMSteps.ts:20:23)\n    at runNextTicks (node:internal/process/task_queues:60:5)\n    at processImmediate (node:internal/timers:449:9)"
+              "duration": 2230599,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mdashboard/index\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mauth/validate\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:174:37)\n    at World.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\src\\test\\steps\\orangeHRMSteps.ts:20:23)"
             }
           },
           {
@@ -294,7 +294,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70264700
+              "duration": 63037999
             },
             "embeddings": [
               {
@@ -319,7 +319,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36283300
+              "duration": 36952600
             }
           },
           {
@@ -332,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2404131699
+              "duration": 2246687099
             }
           },
           {
@@ -345,7 +345,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 344100800
+              "duration": 339561700
             }
           },
           {
@@ -358,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 663967900
+              "duration": 3781633699
             }
           },
           {
@@ -371,7 +371,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2380300,
+              "duration": 2204099,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mdashboard/index\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://opensource-demo.orangehrmlive.com/web/index.php/\u001b[7mauth/login\u001b[27m\"\u001b[39m\n    at Proxy.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:174:37)\n    at World.<anonymous> (C:\\Repository\\PlayWright\\Playwright-Framework\\src\\test\\steps\\orangeHRMSteps.ts:20:23)"
             }
           },
@@ -380,7 +380,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 89900300
+              "duration": 86546699
             },
             "embeddings": [
               {
